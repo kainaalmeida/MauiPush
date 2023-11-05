@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="MauiPush.Views.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:vm="clr-namespace:MauiPush.ViewModels"
+    x:DataType="vm:MainViewModel">
+
+    <StackLayout VerticalOptions="Center">
+
+        <Label
+            HorizontalOptions="Center"
+            Text="Maui Push Notifications"
+            VerticalOptions="Center" />
+
+        <Button
+            Margin="20,0"
+            Command="{Binding AddExternalIdCommand}"
+            Text="Me inscreva" />
+    </StackLayout>
+
+
+
+</ContentPage>
